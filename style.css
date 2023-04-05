@@ -1,14 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
 * {
     box-sizing: border-box;
 
 }
 
-body {
+html {
     font-family: 'Red Hat Display';
     font-size: 16px;
-    position: relative;
-    background: #FAFAFA;
     overflow-x: hidden;
+}
+
+body {
+
+    background: #FAFAFA;
+
 }
 
 .meet-logo-top {
@@ -166,7 +172,7 @@ body {
     position: relative;
     z-index: 2;
     margin-bottom: -25px;
-    
+
 }
 
 .gallery {
@@ -248,7 +254,7 @@ body {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr;
     align-content: center;
     align-items: center;
 }
@@ -260,7 +266,7 @@ body {
     line-height: 44px;
     color: #FAFAFA;
     padding-left: 20px;
-    justify-self: center;
+    max-width: 400px;
 }
 
 .footer-container h3 {
@@ -270,12 +276,18 @@ body {
     line-height: 26px;
     color: #FAFAFA;
     justify-self: center;
+    margin-right: -25px;
 
 }
 
 .footer-container .btn-end {
     align-self: center;
-    justify-self: center;
+    justify-self: end;
+}
+
+.footer-container .download-btn-end:hover {
+    background: #B18BDD;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {}
