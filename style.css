@@ -2,19 +2,19 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 html {
     font-family: 'Red Hat Display';
     font-size: 16px;
-    overflow-x: hidden;
 }
 
 body {
-
     background: #FAFAFA;
+}
 
+.hero {
+    
 }
 
 .meet-logo-top {
@@ -31,15 +31,17 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
-    padding: 5px;
+    flex-direction: row;
+    background-color: aqua;
     width: 100%;
     justify-content: center;
     align-content: center;
     align-items: center;
     margin: 10px auto 100px auto;
     height: 400px;
-
+    overflow-x: hidden;
 }
 
 #group-3 {
@@ -47,17 +49,17 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 540px;
+    max-width: 540px;
 }
 
 .left {
-    position: absolute;
-    left: -3%;
+    
+    
 }
 
 .right {
-    position: absolute;
-    right: -3%;
+   
+    
 }
 
 #head-text-div {
@@ -83,22 +85,14 @@ body {
     color: #28283D;
 }
 
-/*
-#headline-text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 900;
-    color: #28283D;
-}
-*/
-
-
 .download-btn {
     background: #4D96A9;
 }
 
+.download-btn:hover {
+    background: #71C0D4;
+    cursor: pointer;
+}
 .buttons {
     align-self: center;
     margin: 10px;
@@ -114,6 +108,10 @@ body {
     background: #855FB1;
 }
 
+.what-btn:hover {
+    background: #B18BDD;
+    cursor: pointer;
+}
 .download-btn span {
     color: #8FE3F9;
 }
@@ -199,10 +197,12 @@ body {
     margin: 30px auto;
     text-align: center;
     width: 550px;
+
 }
 
 .mid-section-container {
     padding: 20px;
+
 }
 
 
@@ -238,7 +238,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     display: flex;
-    position: absolute;
+    position: relative;
     z-index: 1;
 
 }
@@ -247,6 +247,7 @@ body {
     width: 100%;
     background: #4D96A9;
     opacity: 0.9;
+
 }
 
 .footer-container {
@@ -257,6 +258,7 @@ body {
     grid-template-columns: 1.5fr 1fr 1fr;
     align-content: center;
     align-items: center;
+
 }
 
 
@@ -290,4 +292,22 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
