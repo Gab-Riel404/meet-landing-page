@@ -287,6 +287,7 @@ hero-section {
     grid-template-columns: 1.5fr 1fr 1fr;
     align-content: center;
     align-items: center;
+    grid-gap: 2rem;
 
 }
 
@@ -325,7 +326,8 @@ hero-section {
 /* 480px and below */
 @media only screen and (max-width: 480px) {
     .footer-container   {
-        margin-top: 30px;
+        
+        
     }
     
     .footer-container > h2 {
@@ -352,6 +354,12 @@ hero-section {
 @media only screen and (max-width: 576px) {
     .footer-container {
         padding-bottom: 20px;
+        margin-top: 30px;
+        max-height: 90%;
+    }
+    
+    .footer-container > .btn-end   {
+        padding-bottom: 10px;
     }
 }
 
@@ -368,7 +376,7 @@ hero-section {
 @media only screen and (max-width: 992px) {
     .hero-image {
         position: relative;
-        width: 100%;
+        width: 120%;
         background: url(./assets/tablet/image-hero.png) 50% 50% no-repeat;
         background-size: contain;
     }
@@ -381,6 +389,7 @@ hero-section {
     .container {
         width: auto;
         height: 800px;
+        overflow-x: hidden;
 
     }
 
@@ -394,7 +403,7 @@ hero-section {
     .footer-container {
         grid-template-rows: auto;
         grid-template-columns: none;
-        grid-gap: 3rem;
+        
 
     }
 
