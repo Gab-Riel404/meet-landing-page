@@ -39,7 +39,6 @@ hero-section {
 .container {
     position: relative;
     display: flex;
-    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-content: center;
@@ -327,6 +326,12 @@ hero-section {
 @media only screen and (max-width: 480px) {
     .footer-container {}
 
+    .container {}
+
+    .container > .hero-image {}
+
+    .group-3 {}
+
     .footer-container > h2 {
         max-width: 327px;
         font-weight: 900;
@@ -337,9 +342,7 @@ hero-section {
 
     .mid-section-text {}
 
-    .mid-section-text > h2 {
-        max-width: 327px;
-    }
+    .mid-section-text > h2 {}
 
     #btns {
         flex-direction: column;
@@ -352,35 +355,45 @@ hero-section {
     .footer-container {
         padding-bottom: 20px;
         margin-top: 30px;
-        max-height: 90%;
+        height: 90%;
     }
 
     .footer-container > .btn-end {
         padding-bottom: 10px;
+        grid-gap: 10px;
     }
-    
+
     ..group-3 > #group-chat-headline {
         font-size: 40px;
         line-height: 44px;
     }
+
+    .container {
+        margin-top: -8rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px)   {
+    .footer {
+        background: url(./assets/tablet/image-footer.jpg) no-repeat;
+        width: 100%;
+        max-height: 500px;
+
+    }
+
+    
+
     
 }
 
-/* 768px and below */
-@media only screen and (max-width: 768px) {
-    .footer {}
-
-    .container {
-        height: 800px;
-    }
-}
-
-
+/* 992px and below */
 @media only screen and (max-width: 992px) {
     .hero-image {
         position: relative;
         width: 120%;
-        background: url(./assets/tablet/image-hero.png) 50% 50% no-repeat;
+        background: url(./assets/tablet/image-hero.png) 70% 70% no-repeat;
         background-size: contain;
     }
 
@@ -393,23 +406,14 @@ hero-section {
         width: auto;
         height: 800px;
         overflow-x: hidden;
+        flex-direction: column;
 
     }
-
-    .footer {
-        background: url(./assets/tablet/image-footer.jpg) no-repeat;
-        width: 100%;
-        max-height: 500px;
-
-    }
-
     .footer-container {
         grid-template-rows: auto;
         grid-template-columns: none;
 
-
     }
-
     .footer-container > .btn-end,
     .footer-container > p,
     .footer-container > h2 {
@@ -446,7 +450,7 @@ hero-section {
 
     .group-3 > #headline-text {
         font-size: 16px;
-        line-height: 26px;
+        line-height: 24px;
     }
 
 }
