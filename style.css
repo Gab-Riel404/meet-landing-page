@@ -325,11 +325,8 @@ hero-section {
 
 /* 480px and below */
 @media only screen and (max-width: 480px) {
-    .footer-container   {
-        
-        
-    }
-    
+    .footer-container {}
+
     .footer-container > h2 {
         max-width: 327px;
         font-weight: 900;
@@ -357,10 +354,16 @@ hero-section {
         margin-top: 30px;
         max-height: 90%;
     }
-    
-    .footer-container > .btn-end   {
+
+    .footer-container > .btn-end {
         padding-bottom: 10px;
     }
+    
+    ..group-3 > #group-chat-headline {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
 }
 
 /* 768px and below */
@@ -403,7 +406,7 @@ hero-section {
     .footer-container {
         grid-template-rows: auto;
         grid-template-columns: none;
-        
+
 
     }
 
@@ -434,6 +437,16 @@ hero-section {
         width: 164px;
         height: 156px;
 
+    }
+
+    .group-3 > #group-chat-headline {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .group-3 > #headline-text {
+        font-size: 16px;
+        line-height: 26px;
     }
 
 }
