@@ -55,7 +55,7 @@ hero-section {
     height: 100%;
     position: absolute;
     z-index: -1;
-    
+
 }
 
 .hero-image::before {
@@ -324,9 +324,22 @@ hero-section {
 
 /* 480px and below */
 @media only screen and (max-width: 480px) {
+    .footer-container   {
+        margin-top: 30px;
+    }
+    
     .footer-container > h2 {
         max-width: 327px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
 
+    }
+
+    .mid-section-text {}
+
+    .mid-section-text > h2 {
+        max-width: 327px;
     }
 
     #btns {
@@ -337,7 +350,9 @@ hero-section {
 
 /* 576px and below */
 @media only screen and (max-width: 576px) {
-    .
+    .footer-container {
+        padding-bottom: 20px;
+    }
 }
 
 /* 768px and below */
@@ -356,7 +371,6 @@ hero-section {
         width: 100%;
         background: url(./assets/tablet/image-hero.png) 50% 50% no-repeat;
         background-size: contain;
-        background-color: aqua;
     }
 
     .hero-image::before,
@@ -367,7 +381,7 @@ hero-section {
     .container {
         width: auto;
         height: 800px;
-        
+
     }
 
     .footer {
@@ -403,8 +417,14 @@ hero-section {
         margin-right: 0;
     }
 
-    .footer-container > .btn-end {
-        
+    .footer-container > .btn-end {}
+
+    .gallery {}
+
+    .gallery > img {
+        width: 164px;
+        height: 156px;
+
     }
 
 }
